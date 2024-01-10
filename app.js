@@ -1,5 +1,5 @@
 const express  = require('express')
-const {engine} = require('express-handlebars')
+const { engine } = require('express-handlebars')
 const app = express()
 const port = 3000
 
@@ -19,7 +19,7 @@ app.get('/movies',(req,res)=>{
 
 app.get('/movie/:id',(req,res)=>{
   const id = req.params.id 
-  res.send(`reading movie: ${id}`)
+  res.send(`read movie: ${id}`)
 })
 
  app.listen(port,()=>{
